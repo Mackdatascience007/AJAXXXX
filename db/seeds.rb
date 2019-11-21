@@ -1,4 +1,12 @@
-5.times do 
-    Email.create!(object: Faker::Book.author, body: Faker::Book.title, read: false)
+require 'faker'
+
+Email.destroy_all
+
+
+puts "Ready for emails seed"
+puts "--------------"
+5.times do
+    Email.create(object: Faker::Book.title, body: Faker::ChuckNorris.fact)
 end
-puts("seed ajoute")
+puts "--------------"
+puts "Email's seed --- Ok!"

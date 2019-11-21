@@ -1,24 +1,60 @@
-# README
+# AJAXXXXX ça nettoie tout ...
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The Hacking Project - Version Rails
 
-Things you may want to cover:
 
-* Ruby version
+L'app permet plusieurs manip en AJAX, recevoir un email, le supprimer, le marquer lu etc ...
 
-* System dependencies
+## AJAX ça sent bon !!!
 
-* Configuration
+ ![Screenshot](screenshot.jpg)
 
-* Database creation
+***
 
-* Database initialization
+## Lien app en production HEROKU
 
-* How to run the test suite
+https://sleepy-temple-28982.herokuapp.com/
 
-* Services (job queues, cache servers, search engines, etc.)
+***
 
-* Deployment instructions
+## Installation
+Cloner le repository : 
 
-* ...
+~~~
+Ou télécharger sa version compressée puis l'extraire.
+
+***
+
+
+
+## Configuration requise
+Version de **Rails** :
+~~~bash
+$ rails-v
+Rails 5.2.3
+~~~
+
+Version de **Ruby** :
+~~~bash
+$ ruby -v
+ruby 2.5.1
+~~~
+
+Version de **Bundler** :
+~~~bash
+$ bundle -v
+Bundler version 2.0.2
+~~~
+
+Gemmes utilisées (source : *Gemfile*) :\
+Gemmes ajoutées au **Gemfile** de Rails :
+~~~ruby
+
+***
+
+## Credits
+Les ressources de [The Hacking Project](https://www.thehackingproject.org/)\
+Les [guides de Rails](https://guides.rubyonrails.org/index.html)
+
+
+Source de ce README : GAEL DUBOIS , que je remercie.
