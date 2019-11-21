@@ -7,12 +7,12 @@ lines = document.getElementsByTagName("tr");
 
 for(count = 1; count <lines.length; count++){
     if (lines[count].getElementsByTagName("a")[0].text == "<%=@email.object%>") {
-       pos=count;
-       if (lines[count].getElementsByTagName("a")[0].classList.contains("text-white") == false) {
-       lines[count].getElementsByTagName("a")[0].classList.add("text-white");
-       }
+        pos=count;
+        if (lines[count].getElementsByTagName("a")[0].classList.contains("text-white") == false) {
+        lines[count].getElementsByTagName("a")[0].classList.add("text-white");
+        }
     }
 };
 
 
-document.getElementsByTagName("tr")[pos].insertAdjacentHTML("beforeend", "<%= j render 'card', card: @email %>");
+document.getElementsByTagName("tr")[pos].insertAdjacentHTML("beforeend", "<%= j render 'show', card: @email %>");

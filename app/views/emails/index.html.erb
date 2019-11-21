@@ -2,15 +2,15 @@
 
 <div class="container"> 
   <h1>Emails</h1>
-  <%= link_to 'Envoyer un email', emails_path, method: :post, remote: true %>
+  <%= link_to 'Envoyer un email', emails_path, class: "btn btn-primary", method: :post, remote: true %>
 </div>
 
 <div class="row p-5">
   <table class="table table-striped table-dark col-6 ">
     <thead>
       <tr>
-        <th scope="col">Liste des emails</th>
-        <th scope="col">Email selectionne</th>
+        <th scope="col">Liste des em@ils</th>
+        <th scope="col">Em@il selectionné</th>
     
       </tr>
     </thead>
@@ -30,4 +30,4 @@
 </div>
 <br>
 
-<%= link_to 'New Email', new_email_path %>
+<%= link_to 'New Email', new_email_path, class: "btn btn-danger" %>
