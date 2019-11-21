@@ -1,0 +1,12 @@
+if (document.querySelector(".card") != null) {
+    document.querySelector(".card").remove();
+};
+
+lines = document.getElementsByTagName("tr");
+
+for(count = 1; count <lines.length; count++){
+    if (lines[count].getElementsByTagName("a")[0].text == "<%=@email.object%>") {
+       pos=count;
+       lines[count].getElementsByTagName("a")[0].classList.remove("text-white");
+    }
+};
